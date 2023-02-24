@@ -208,8 +208,8 @@ label {
     height: 8vh;
     width: 13vw;
     border-radius: 2vh;
-    background-color: red;
-    background-image: linear-gradient(to bottom right, rgb(91, 1, 91), rgb(144, 1, 146));
+    background: var(--botao);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
     justify-content: center;
