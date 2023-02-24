@@ -16,6 +16,6 @@ function inserir(){
 
     // inserir cdg em js
     let codeJs = document.getElementById("codeJs")
-    document.getElementById("jsUser").value.innerHTML = codeJs
+    (document.getElementById("jsUser").value).innerHTML = codeJs
 
 }
