@@ -15,9 +15,7 @@ function inserir(){
     p2.innerHTML = codeHtml
 
     // inserir cdg em js
-    let userJs = document.getElementById("jsUser")
-    let codeJs = document.getElementById("codeJs").value
-
-    userJs.innerText = codeJs
+    let codeJs = document.getElementById("codeJs")
+    document.getElementById("jsUser").innerHTML = codeJs
 
 }
