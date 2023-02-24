@@ -1,38 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section id="page1" class="section1">
-        <div class="div1">
-            <span class="span1">
-                <p>Insira seu código em HTML</p>
-                <textarea name="" id="codeHtml" cols="30" rows="10"></textarea>
-            </span>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversor HTML</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <section id="page1">
+                <h3>Insira seu código HTML</h3>
+                <textarea id="codeHtml" cols="30" rows="10"></textarea>
+                <h3>Insira seu código JavaScript</h3>
+                <textarea id="codeJs" cols="30" rows="10"></textarea>
+                <input id="run" type="button" value="Gerar página">
+            </section>
 
-            <span class="span1">
-                <p>Insira seu código em JavaScript</p>
-                <textarea name="" id="codeJs" cols="30" rows="10"></textarea>
-            </span>
-        </div>
+            <section id="page2">
+                
+            </section>
 
-        <div class="btnArea">
-            <input id="btn" type="submit" value="RUN" class="btn1">
-        </div>
-    </section>
-
-    <section id="page2">
-
-    </section>
-
-    <script id="jsUser">
         
-    </script>
-</body>
-<script src="script.js"></script>
+        <script id="JsUser"></script>
+        <script src="./script.js"></script>
+
+    </body>
 </html>

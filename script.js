@@ -1,21 +1,34 @@
-var btn = document.getElementById("btn")
-btn.addEventListener("click", inserir)
+var btn = document.getElementById('run')
+btn.addEventListener('click', inserir)
 
 function inserir(){
-    //ocultar pg 1 e exibir pg 2 
-    let p1 = document.getElementById("page1")
-    let p2 = document.getElementById("page2")
 
-    p1.style.display = "none"
-    p2.style.display = "flex"
+    //ocultar pagina 1 e exibir pagina 2
+    let p1 = document.getElementById('page1')
+    let p2 = document.getElementById('page2')
 
-    // inserir cdg em html
-    let codeHtml = document.getElementById("codeHtml").value
-    
-    p2.innerHTML = codeHtml
+    p1.style.display = 'none'
+    p2.style.display = 'flex'
 
-    // inserir cdg em js
-    let codeJs = document.getElementById("codeJs")
-    (document.getElementById("jsUser").value).innerHTML = codeJs
+    //inserir codigo em HTML
+    let codeHtml = document.getElementById('codeHtml').value
+    p2.innerHTML = '<pre' + codeHtml + '</pre>';
 
+    //inserir codigo em JavaScript
+    let codeJs = document.getElementById('codeJs').value
+    document.getElementById('JsUser').innerHTML = codeJs
 }
+
+const html = document.querySelector("html");
+const body = document.querySelector("body");
+var data = new Date();
+var horas = data.getHours();
+
+console.log(horas);
+
+window.addEventListener("load", function () {
+  if (horas < 18) {
+    html.classList.toggle("white-mode");
+    body.classList.toggle("white-mode");
+  }
+});
