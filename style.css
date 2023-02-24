@@ -228,7 +228,7 @@ label {
 }
 
 .section1{
-    background-color: #262626;
+    background: var(--fundo);
     display: flex;
     flex-direction: column;
     justify-content: center;
