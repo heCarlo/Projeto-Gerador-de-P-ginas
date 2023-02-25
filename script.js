@@ -19,8 +19,12 @@ function inserir(){
     document.getElementById('JsUser').innerHTML = codeJs
 }
 
- function reset(){
+ function voltar(){
   location.reload()
+}
+
+function resetar(){
+  location.reload(true)
 }
 
 /* function voltar(){
