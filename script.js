@@ -11,12 +11,16 @@ function inserir(){
     p2.style.display = 'flex'
 
     //inserir codigo em HTML
-    let codeHtml = document.getElementById('codeHtml').value
-    p2.innerHTML = '<pre' + codeHtml + '</pre>';
+    var codeHtml = document.getElementById('codeHtml').value
+    p2.innerHTML = '<pre' + codeHtml + '</pre>' + p2.innerHTML;
 
     //inserir codigo em JavaScript
-    let codeJs = document.getElementById('codeJs').value
+    var codeJs = document.getElementById('codeJs').value
     document.getElementById('JsUser').innerHTML = codeJs
+}
+
+ function reset(){
+  location.reload(true)
 }
 
 const html = document.querySelector("html");
@@ -32,3 +36,4 @@ window.addEventListener("load", function () {
     body.classList.toggle("white-mode");
   }
 });
+
