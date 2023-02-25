@@ -4,8 +4,8 @@ btn.addEventListener('click', inserir)
 function inserir(){
 
     //ocultar pagina 1 e exibir pagina 2
-    let p1 = document.getElementById('page1')
-    let p2 = document.getElementById('page2')
+    var p1 = document.getElementById('page1')
+    var p2 = document.getElementById('page2')
 
     p1.style.display = 'none'
     p2.style.display = 'flex'
@@ -20,9 +20,15 @@ function inserir(){
 }
 
  function reset(){
-  location.reload(true)
+  location.reload()
 }
 
+/* function voltar(){
+  document.getElementById("p1").setAttribute("href", "style.css")
+  p2.style.display("none")
+  p1.style.display("flex")
+}
+ */
 const html = document.querySelector("html");
 const body = document.querySelector("body");
 var data = new Date();
