@@ -228,16 +228,16 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85vh;
-    width: 65vw;
+    height: 90vh;
+    width: 75vw;
     padding: 5vh;
     border-radius: 2vw;
     box-shadow: 0px 0px 20px 0px black;
 }
 
 .page2{
-    height: 85vh;
-    width: 65vw;
+    height: 90vh;
+    width: 75vw;
     padding: 5vh;
     border-radius: 2vw;
     background: var(--fundo);
@@ -248,4 +248,22 @@ label {
 
 #page2{
     display: none;
+}
+
+#btnCalcular{
+    height: 6vh;
+    width: 10vw;
+    border-radius: 2vh;
+    background: var(--botao);
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#btnCalcular:hover{
+    transform: scale(110%);
 }
