@@ -27,12 +27,8 @@ function resetar(){
   location.reload(true)
 }
 
-/* function voltar(){
-  document.getElementById("p1").setAttribute("href", "style.css")
-  p2.style.display("none")
-  p1.style.display("flex")
-}
- */
+// Dark/Light
+
 const html = document.querySelector("html");
 const body = document.querySelector("body");
 var data = new Date();
